@@ -1,0 +1,67 @@
+
+* {
+	@include box-sizing (border-box);
+	margin : 0;
+	padding: 0;
+}
+
+html {
+	font-size  : 16px;
+}
+
+body {
+	font-size  : $lh;
+	line-height: $lh;
+	font-family: $ff;
+	color: $white;
+}
+.mainContainer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.mainContent {
+	position: absolute;
+}
+
+.homePage_wrapper {
+	position: absolute;
+	top   : 0;
+	left  : 0;
+	right : 50%;
+	bottom: 50%;	
+}
+
+.aboutUsPage_wrapper {
+	position: absolute;
+	top   : 0;
+	bottom: 0;
+	right : 0;
+	
+
+	z-index: 10;
+	@include transition(all 0.3s ease);
+	background-color: rgba(255, 255, 255, 0.15);
+}
+.teamPage_wrapper {
+	position: absolute;
+	top   : 50%;
+	left  : 50%;
+
+	background-color: rgba(0, 101, 128, 0.15);
+}
+
+.contactPage_wrapper {
+	position: absolute;
+	top   : 50%;
+	left  : 0;
+	
+
+	background-color: rgba(17, 24, 32, 0.15);
+}
+
+.pageContent_wrapper {
+	padding: $lh*3;
+}
